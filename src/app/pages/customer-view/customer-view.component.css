@@ -1,0 +1,30 @@
+.container {
+    max-width: 800px;
+  }
+  
+  h2 {
+    color: #2c3a47;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .btn-info {
+    background-color: #55e6c1;
+    border: none;
+  }
+  
+  .btn-info:hover {
+    background-color: #48c9a9;
+  }
+  
+  .btn-danger {
+    background-color: #e74c3c;
+    border: none;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c0392b;
+  }
+  
