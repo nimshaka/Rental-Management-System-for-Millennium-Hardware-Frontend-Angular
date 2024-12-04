@@ -1,0 +1,17 @@
+.container {
+    max-width: 600px;
+  }
+  
+  h2 {
+    color: #2c3a47;
+  }
+  
+  .btn-success {
+    background-color: #55e6c1;
+    border: none;
+  }
+  
+  .btn-success:hover {
+    background-color: #48c9a9;
+  }
+  
