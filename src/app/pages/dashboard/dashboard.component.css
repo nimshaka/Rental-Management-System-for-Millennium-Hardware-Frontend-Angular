@@ -1,11 +1,140 @@
+/* Container & General Layout */
+.container-fluid {
+  margin-top: 30px;
+}
+
+/* Card Styles */
 .card {
-  transition: transform 0.2s;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 30px 20px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.card .btn {
+  padding: 8px 20px;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  opacity: 0.8;
+}
+
+.card .btn-primary {
+  background-color: #55E6C1;
+  border: none;
+}
+
+.card .btn-success {
+  background-color: #28a745;
+  border: none;
+}
+
+.card .btn-warning {
+  background-color: #f39c12;
+  border: none;
+}
+
+/* Icon Styling */
+.card i {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
+}
+
+.text-primary {
+  color: #55E6C1 !important;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+.text-warning {
+  color: #f39c12 !important;
+}
+
+/* Recent Activities Section */
+h3.text-center {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
 .table-hover tbody tr:hover {
-  background-color: #f8f9fa;
+  background-color: #f1f1f1;
+}
+
+.table-dark {
+  background-color: #2C3A47;
+  color: #fff;
+}
+
+.table-dark th, .table-dark td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table th {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.table td {
+  font-size: 1rem;
+}
+
+.badge {
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.badge.bg-success {
+  background-color: #28a745;
+}
+
+.badge.bg-warning {
+  background-color: #f39c12;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .card-body {
+    padding: 20px;
+  }
+
+  .card i {
+    font-size: 3rem;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
 }

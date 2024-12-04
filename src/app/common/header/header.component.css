@@ -1,18 +1,62 @@
+
+.navbar {
+  background-color: #2C3A47; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar-toggler-icon {
+  background-color: #55E6C1; /* Light accent color */
+}
+
 .navbar-brand {
-    font-weight: bold;
-    font-size: 1.5rem;
+  font-size: 1.8rem; /* Larger brand name */
+  font-weight: bold;
+  color: #55E6C1; /* Accent color */
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand i {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #fff !important; /* White text for links */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #55E6C1 !important; /* Accent color on hover */
+}
+
+.nav-item {
+  margin-right: 15px; /* Space between nav items */
+}
+
+.navbar-nav {
+  justify-content: flex-end; /* Align items to the right */
+}
+
+/* Mobile Navbar */
+@media (max-width: 991px) {
+  .navbar-nav {
+    text-align: center;
   }
-  
-  .nav-link {
-    font-size: 1.1rem;
-    margin-right: 10px;
+  .navbar-nav .nav-item {
+    margin: 10px 0;
   }
-  
-  .nav-link i {
-    margin-right: 5px;
-  }
-  
-  .navbar {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
+}
+
+/* Icon Styling */
+.bi {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+/* Active State (Optional) */
+.nav-item.active .nav-link {
+  color: #55E6C1 !important; /* Highlight active link */
+}
